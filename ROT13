@@ -1,0 +1,17 @@
+# Mod 26
+
+## Objective
+Decode a message encrypted with the ROT13 cipher.
+
+## Solution
+
+- Opened the encrypted text.
+- Identified the cipher as **ROT13**.
+- Decoded it using CyberChef's **ROT13** operation.
+- Retrieved the flag.
+
+## What I Learned
+
+- ROT13 shifts each letter by 13 positions.
+- Applying ROT13 twice returns the original text.
+- CyberChef is a useful tool for solving basic cryptography challenges.
