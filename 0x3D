@@ -1,0 +1,31 @@
+# Warmed Up
+
+## Objective
+Convert a hexadecimal number to decimal.
+
+## Solution
+
+Hexadecimal:
+
+```text
+0x3D
+```
+
+Calculation:
+
+```text
+3 × 16 + 13 = 61
+```
+
+Flag:
+
+```text
+picoCTF{61}
+```
+
+## What I Learned
+
+- Hexadecimal is base 16.
+- Decimal is base 10.
+- `A-F` in hexadecimal represent values `10-15`.
+- How to convert hexadecimal numbers to decimal manually and using Linux.
