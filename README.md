@@ -1,0 +1,26 @@
+# CYLAP
+# Super SSH
+
+## Objective
+Connect to a remote server using SSH and retrieve the flag.
+
+## Solution
+
+```bash
+ssh ctf-player@titan.picoctf.net -p <PORT>
+```
+
+- Accepted the SSH fingerprint by typing `yes`.
+- Entered the provided password.
+- Successfully connected and obtained the flag.
+
+## Issues Encountered
+
+- **Connection refused:** Used an old port after the instance restarted.
+- **Permission denied:** Entered the password incorrectly.
+
+## What I Learned
+
+- How to use the `ssh` command.
+- Purpose of `Host`, `Username`, and `Port`.
+- Difference between **Connection Refused** and **Permission Denied**.
