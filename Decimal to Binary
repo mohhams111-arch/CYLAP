@@ -1,0 +1,30 @@
+# 2Warm
+
+## Objective
+Convert a decimal number to binary.
+
+## Solution
+
+Decimal:
+
+```text
+42
+```
+
+Binary:
+
+```text
+101010
+```
+
+Flag:
+
+```text
+picoCTF{101010}
+```
+
+## What I Learned
+
+- Binary is base 2.
+- Decimal is base 10.
+- How to convert decimal numbers to binary manually and using Linux.
