@@ -1,0 +1,26 @@
+# Tab, Tab, Attack
+
+## Objective
+Navigate through long directory names using tab completion and retrieve the flag.
+
+## Solution
+
+- Extracted the ZIP file.
+- Used the `Tab` key to autocomplete long directory names.
+- Reached the executable file.
+- Ran the binary to obtain the flag.
+
+## Commands Used
+
+```bash
+unzip Addadshashanammu.zip
+cd Add<Tab>
+ls
+./fang-of-haynekhtnamet
+```
+
+## What I Learned
+
+- How to use Tab completion in Linux.
+- How to navigate long directory structures efficiently.
+- How to execute Linux binaries.
