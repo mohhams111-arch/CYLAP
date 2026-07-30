@@ -1,0 +1,20 @@
+# Wave a Flag
+
+## Objective
+Use the help flag of a Linux binary to retrieve the flag.
+
+## Solution
+
+```bash
+chmod +x warm
+./warm -h
+```
+
+The program displayed the flag when executed with the `-h` option.
+
+## What I Learned
+
+- How to execute a Linux binary.
+- Why `-h` and `--help` are useful.
+- Always check a program's help before guessing its usage.
+
