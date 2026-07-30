@@ -1,0 +1,15 @@
+# Bases
+
+## Objective
+Decode a Base64 encoded string.
+
+## Solution
+
+- Identified the encoded text as Base64.
+- Decoded it using CyberChef (`From Base64`).
+- Retrieved the original text and submitted it in the picoCTF flag format.
+
+## What I Learned
+
+- Base64 is an encoding method, not encryption.
+- How to recognize and decode Base64 using CyberChef and Linux.
