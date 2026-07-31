@@ -1,0 +1,17 @@
+# Insp3ct0r
+
+## Objective
+Inspect the source code of a web page and find the hidden flag.
+
+## Solution
+
+- Opened the website.
+- Used Developer Tools (`F12`).
+- Inspected the HTML, CSS, and JavaScript files.
+- Combined the three parts of the flag.
+
+## What I Learned
+
+- How to use browser Developer Tools.
+- How to inspect HTML, CSS, and JavaScript files.
+- Sensitive information should never be left inside client-side code.
