@@ -1,0 +1,45 @@
+# Where are the robots
+
+## Objective
+
+Find the hidden flag by inspecting the website for publicly accessible files.
+
+## Solution
+
+1. Open the provided website.
+
+2. Check for the `robots.txt` file by visiting:
+
+```text
+http://<target>/robots.txt
+```
+
+3. The file contains:
+
+```text
+User-agent: *
+Disallow: /cc6b1.html
+```
+
+4. Visit the hidden page:
+
+```text
+http://<target>/cc6b1.html
+```
+
+5. The flag is displayed on that page.
+
+---
+
+## Commands Used
+
+No terminal commands were required for this challenge.
+
+---
+
+## What I Learned
+
+- What the `robots.txt` file is.
+- How websites use `robots.txt` to guide search engine crawlers.
+- That `robots.txt` is publicly accessible and should not be used to protect sensitive information.
+- How attackers can inspect `robots.txt` to discover hidden pages and directories during reconnaissance.
