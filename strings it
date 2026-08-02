@@ -1,0 +1,19 @@
+# strings it
+
+## Objective
+Extract readable strings from a binary file to find the hidden flag.
+
+## Solution
+
+```bash
+cd /mnt/c/Users/delic/Downloads
+strings "strings (1)" | grep picoCTF
+```
+
+The flag was found inside the printable strings of the binary.
+
+## What I Learned
+
+- How to use the `strings` command.
+- How to filter output using `grep`.
+- How to access Windows files from WSL using `/mnt/c/`.
