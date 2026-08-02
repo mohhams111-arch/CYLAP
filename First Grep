@@ -1,23 +1,42 @@
 # First Grep
 
 ## Objective
-Find the hidden flag inside a file using the `grep` command.
+Find the hidden flag inside a text file using the `grep` command.
 
 ## Solution
 
+1. Check the file type:
+
 ```bash
-cd /mnt/c/Users/delic/Downloads
-grep "picoCTF{" file
+file file
 ```
 
-If the file is binary:
+Output:
+
+```text
+ASCII text, with very long lines (14545)
+```
+
+Since the file is a text file, `grep` can search it directly.
+
+2. Search for the flag:
 
 ```bash
-strings file | grep "picoCTF{"
+grep picoCTF file
+```
+
+The file contains one very long line, so `grep` displays the entire line and highlights the matching text.
+
+To display only the flag:
+
+```bash
+grep -o 'picoCTF{[^}]*}' file
 ```
 
 ## What I Learned
 
-- How to use `grep` to search for specific text.
+- How to identify a file type using `file`.
 - The difference between text files and binary files.
-- How to use `strings` with `grep` when working with binary files.
+- How `grep` searches for matching text.
+- Why `grep` sometimes prints an entire line instead of only the match.
+- How the `-o` option prints only the matched text.
