@@ -1,0 +1,23 @@
+# First Grep
+
+## Objective
+Find the hidden flag inside a file using the `grep` command.
+
+## Solution
+
+```bash
+cd /mnt/c/Users/delic/Downloads
+grep "picoCTF{" file
+```
+
+If the file is binary:
+
+```bash
+strings file | grep "picoCTF{"
+```
+
+## What I Learned
+
+- How to use `grep` to search for specific text.
+- The difference between text files and binary files.
+- How to use `strings` with `grep` when working with binary files.
