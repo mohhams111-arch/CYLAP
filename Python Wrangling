@@ -1,0 +1,40 @@
+# Python Wrangling
+
+## Objective
+
+Decrypt the encrypted flag using the provided Python script and password file.
+
+## Solution
+
+1. Install the required dependency:
+
+```bash
+python -m pip install cryptography
+```
+
+2. Read the password:
+
+```bash
+type password.txt
+```
+
+3. Decrypt the encrypted file:
+
+```bash
+python ende.py -d flag.txt.en
+```
+
+When prompted, enter the password from `password.txt`.
+
+The decrypted output contains the flag.
+
+---
+
+## What I Learned
+
+- How to install missing Python packages using `pip`.
+- How to understand a program through its `Usage` message.
+- How to read Python source code to determine the required arguments.
+- How `sys.argv` is used to receive command-line arguments.
+- The difference between encryption (`-e`) and decryption (`-d`).
+- How to use a password to decrypt an encrypted file.
