@@ -1,0 +1,63 @@
+# PW Crack 1
+
+## Objective
+
+Analyze the Python source code to find the correct password and use it to decrypt the encrypted flag.
+
+## Solution
+
+1. Open the Python source code:
+
+```bash
+cat level1.py
+```
+
+2. Inspect the password check:
+
+```python
+if(user_pw == "691d"):
+```
+
+The password is hardcoded in the source code.
+
+3. Run the program:
+
+```bash
+python3 level1.py
+```
+
+4. Enter the password:
+
+```
+691d
+```
+
+5. The program decrypts the encrypted file and prints the flag.
+
+---
+
+## Flag
+
+```text
+picoCTF{545h_r1ng1ng_56891419}
+```
+
+---
+
+## Commands Used
+
+```bash
+ls
+cat level1.py
+python3 level1.py
+```
+
+---
+
+## What I Learned
+
+- How to inspect Python source code.
+- How to identify hardcoded passwords.
+- How conditional statements (`if`) validate user input.
+- How XOR-based decryption can be triggered after successful authentication.
+- The importance of reading source code before attempting password guessing.
